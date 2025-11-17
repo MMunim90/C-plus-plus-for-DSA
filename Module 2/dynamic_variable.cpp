@@ -36,5 +36,9 @@ int main()
     // int *p = new int;
     // *p = 100;
     // cout << *p << endl << &p << endl << p << endl;
+
+    // for delete dynamic variable
+    // int *a = new int;
+    // delete a;
     return 0;
 }
