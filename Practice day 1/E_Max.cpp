@@ -11,19 +11,13 @@ int main()
        cin >> arr[i];
     }
 
-    // int maximum = arr[0];
-    // for(int i=0; i<n; i++)
-    // {
-    //    cout << arr[i] << " ";
-    // }
-
-    // cout << endl;
+    int maximum = arr[0];
 
     for(int i=0; i<n; i++)
     {
-        
-        cout << max({arr[i]});
-        
+        maximum = max(maximum , arr[i]);
     }
+
+    cout << maximum << endl;
     return 0;
 }
