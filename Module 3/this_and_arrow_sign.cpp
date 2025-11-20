@@ -10,14 +10,14 @@ public:
 
     Student(int roll, int cls, double gpa)
     {
-        // this->roll = roll;
-        // this->cls = cls;
-        // this->gpa = gpa;
-        
+        this->roll = roll;
+        this->cls = cls;
+        this->gpa = gpa;
+
         // "this" is a pointer
-        (*this).roll = roll;
-        (*this).cls = cls;
-        (*this).gpa = gpa;
+        // (*this).roll = roll;
+        // (*this).cls = cls;
+        // (*this).gpa = gpa;
     }
 };
 
