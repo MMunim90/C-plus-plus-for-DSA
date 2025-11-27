@@ -24,13 +24,30 @@ int main()
     // cout << s << endl;
 
 
-    string str = "hello";
+    string str = "hello world";
 
     // str[1] = 'u'; // this is possible
     //str[5] = 'M'; // this is not possible because of string size.
 
-    str.pop_back();
-    str.pop_back();
+    // str.pop_back();
+    // str.pop_back();
+
+    // str = "gello";
+    
+    string str2 = "hi";
+
+    // str = str2;
+
+    // str.assign("hihihihi");
+    // str.assign(str2);
+
+    // str.erase(3, 5);
+
+    // str.replace(6, 5, "Bangladesh");
+    // str.replace(6, 0, "Bangladesh");
+
+    str.insert(5, "_");
+    // str.replace(5, 0, "_");
 
     cout << str << endl;
     return 0;
