@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 class Student
 {
     public:
@@ -26,6 +25,7 @@ bool comp(Student l, Student r)
 
     // 3
     return l.marks < r.marks;  // all are same. but this one is better
+
 }
 
 int main()
@@ -43,7 +43,7 @@ int main()
     
     for(int i=0; i<n; i++)
     {
-        cout << arr[i].name << " " << arr[i].roll << " " << arr[i].marks << endl;
+        cout << arr[i].name << " " << arr[i].roll << " " << arr[i].marks << " " << endl;
     }
     return 0;
 }
