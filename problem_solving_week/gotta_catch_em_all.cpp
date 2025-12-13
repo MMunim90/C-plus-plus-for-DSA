@@ -12,13 +12,22 @@ int main()
         {
             cin >> arr[i];
         }
+        int minimum_coin = 0;
 
         for(int i=0; i<n; i++)
         {
-            cout << arr[i] << " ";
+            if(arr[i] * x < y)
+            {
+                minimum_coin += arr[i] * x;
+            }
+            else
+            {
+                minimum_coin += y;
+            }
         }
 
-        cout << endl;
+        cout << minimum_coin << endl;
+
     }
     
     return 0;
