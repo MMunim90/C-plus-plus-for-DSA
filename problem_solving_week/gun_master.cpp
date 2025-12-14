@@ -14,17 +14,20 @@ int main()
             cin >> arr[i];
         }
 
+        char gun = 'c';
         int gun_switch_count = 0;
 
         for(int i=0; i<n; i++)
         {
-            if(arr[i] > r && arr[i+1] <= r)
+            if(arr[i] > r && gun == 'c')
             {
                 gun_switch_count++;
+                gun = 'l';
             }
-            else if(arr[i] <= r && arr[i+1] > r)
+            else if(arr[i] <= r && gun != 'c')
             {
                 gun_switch_count++;
+                gun = 'c';
             }
         }
 
